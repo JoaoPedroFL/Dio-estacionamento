@@ -4,40 +4,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
     <title>Estacionamento DIO</title>
 </head>
 <body>
 
-    <input
-        type="text"
-        id="nome"
-        placeholder="Digite o nome do veículo: "
-        autocomplete="off"
-    />
+    <div class="container">
+        <h1 class="display-1 text-center mt-5">Estacionamento Dio</h1>
 
-    <input
-        type="text"
-        id="placa"
-        placeholder="Digite o número da placa: "
-        autocomplete="off"
-    />
+        <div class="row">
+            <div class="col">
+                <input
+                    class="form-control mt-5"
+                    type="text"
+                    id="nome"
+                    placeholder="Digite o nome do veículo: "
+                    autocomplete="off"
+                />
+            </div>
+            <div class="col">
+                <input
+                class="form-control mt-5"
+                    type="text"
+                    id="placa"
+                    placeholder="Digite o número da placa: "
+                    autocomplete="off"
+                />
+            </div>
+        </div>
 
-    <button id="cadastrar">Cadastrar</button>
+            <button class="btn btn-success mt-4 mb-4" id="cadastrar">Cadastrar</button>
 
-    <table>
-        <thead>
-            <tr>
-                <th>Nome</th>
-                <th>Placa</th>
-                <th>Entrada</th>
-                <th>Ações</th>
-            </tr>
-        </thead>
-        <tbody id="patio">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Placa</th>
+                        <th>Entrada</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="patio">
 
-        </tbody>
-    </table>
-    
+                </tbody>
+            </table>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+    <script src="/js/bootstrap.min.js"></script>
 
     <script src="./script.js"></script>
 </body>
